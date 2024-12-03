@@ -60,6 +60,7 @@ public class StudentDatabaseCursor {
             return false;
         }
         */
+        System.out.println(studentInsertStatement); // DELETE AFTER COMPLETING CODE ABOVE.
         return false; // DELETE AFTER COMPLETING CODE ABOVE.
     }
 

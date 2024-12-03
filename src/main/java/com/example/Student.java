@@ -6,7 +6,10 @@ public class Student {
      *  - firstName (String)
      *  - lastName (String)
      *  - gpa (float)
-     *  - className (String)
+     *  - class (String)
      *  - studentId (integer)
      */
+
+    // Create an overloaded constructor, the default constructor which generates a student, another constructor that takes a studentId, firstname, lastname, gpa, class
+    // Override the toString() to dsiplay a Student's name, class and studentId
 }

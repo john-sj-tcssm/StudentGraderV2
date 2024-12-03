@@ -1,0 +1,55 @@
+# Maven target directory
+/target/
+
+# Compiled Java classes
+*.class
+
+# Log files
+*.log
+
+# environment variables.
+.env
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+*~
+
+# Maven POM files backup
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Eclipse specific files
+*.classpath
+*.project
+.settings/
+
+# IDEA specific files
+*.iml
+.idea/
+out/
+
+# NetBeans specific files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VS Code specific files
+.vscode/
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+*.stackdump

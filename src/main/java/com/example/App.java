@@ -12,8 +12,5 @@ public final class App {
         for(int i = 0; i<10; i++){
             students.add(new Student());
         }
-
-        
-
     }
 }

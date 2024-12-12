@@ -53,6 +53,17 @@ public class Student {
             this.studentId = studentId;
             this.className = className;
     }
+   public String getFirstName() { return this.firstName; }
+   public void setFirstName (String newFirstName) { this.firstName = newFirstName; }
+   public String getLastName() { return this.lastName; }
+   public void setLastName (String newLastName) { this.lastName = newLastName; }
+   public int getStudentId() { return this.studentId; }
+   public void setStudentId(int newStudentId) { this.studentId= newStudentId; }
+   public double getGpa() { return this.gpa; }
+   public void setGpa(float newGpa) { this.gpa= newGpa; }
+   public String getClassName() { return this.className; }
+   public void setClassName(String newClassName) { this.className= newClassName; }
+
 
     /*
      * TODO: Implement this Student class with the following attributes:

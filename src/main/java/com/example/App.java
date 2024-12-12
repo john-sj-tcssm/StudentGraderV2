@@ -8,9 +8,11 @@ public final class App {
     private App() {
     }
     public static void main(String[] args) {
-        ArrayList<Student> students = new ArrayList<>();
-        for(int i = 0; i<10; i++){
-            students.add(new Student());
+        Student[] students = Student.studentGenerator();
+        for(int i = 0; i < students.length; i++) {
+            System.out.println(students[i]);
         }
     }
 }
+    
+

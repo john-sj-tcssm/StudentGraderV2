@@ -42,8 +42,13 @@ public class Student {
 
         this.className = CLASS_NAME[random.nextInt(CLASS_NAME.length)];
 
+        Student student = new Student(this.firstName, this.lastName, this.gpa, this.studentId, this.className);
+        
+
 
     }
+
+
 
     public Student(String firstName, String lastName, double gpa, int studentId, String className)
     {
@@ -53,6 +58,7 @@ public class Student {
             this.studentId = studentId;
             this.className = className;
     }
+
    public String getFirstName() { return this.firstName; }
    public void setFirstName (String newFirstName) { this.firstName = newFirstName; }
    public String getLastName() { return this.lastName; }
@@ -79,10 +85,29 @@ public class Student {
 
     // - HINT: Check StudentSeeder. What data-structures did you need to create in order to generate a single student.
     // Override the toString() to dsiplay a Student's name, class and studentId
+    public static Student[] studentGenerator(int numberOfStudents) {
 
-    // public static ArrayList studentGenerator(){
+        Student[] students = new Student[numberOfStudents];
 
-    // }
+        for(int i = 0; i < students.length; i++) {
+            students[i] = new Student();
+        }
+        return students;
+        
+    }
+
+    public static Student[] studentGenerator() {
+
+        Student[] students = new Student[10];
+
+        for(int i = 0; i < students.length; i++) {
+            students[i] = new Student();
+        }
+        return students;
+        
+    }
+
+
 
     @Override
     public String toString() {

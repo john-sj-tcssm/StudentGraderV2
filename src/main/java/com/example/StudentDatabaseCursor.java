@@ -44,14 +44,14 @@ public class StudentDatabaseCursor {
     public boolean insertStudent(Student student)
     {
         String studentInsertStatement = "INSERT INTO students (student_id, first_name, last_name, class_name, gpa) VALUES (%d, '%s', '%s', '%s', '%f')";
-        /*
+
         try (PreparedStatement preparedStatement = this.statement.getConnection().prepareStatement(studentInsertStatement)) {
             // Use the student object's methods to get the appropriate information. studentId, firstName, lastName, className, and gpa in that exact order.
-            preparedStatement.setInt(1, {studentId});
-            preparedStatement.setString(2,{studentFirstName});
-            preparedStatement.setString(3, {studentLastName});
-            preparedStatement.setString(4, {studentClassName});
-            preparedStatement.setFloat(5, {studentGPA});
+            preparedStatement.setInt(1, student.getStudentId());
+            preparedStatement.setString(2, student.getFirstName());
+            preparedStatement.setString(3, student.getLastName());
+            preparedStatement.setString(4, student.getClassName());
+            preparedStatement.setDouble(5, student.getGpa());
             preparedStatement.executeUpdate();
             return true;
         } catch (SQLException e) {
@@ -59,9 +59,9 @@ public class StudentDatabaseCursor {
             e.printStackTrace();
             return false;
         }
-        */
-        System.out.println(studentInsertStatement); // DELETE AFTER COMPLETING CODE ABOVE.
-        return false; // DELETE AFTER COMPLETING CODE ABOVE.
+
+        //System.out.println(studentInsertStatement); // DELETE AFTER COMPLETING CODE ABOVE.
+        //return false; // DELETE AFTER COMPLETING CODE ABOVE.
     }
 
     /*
